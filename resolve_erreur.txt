@@ -1,0 +1,13 @@
+For anyone that stumbles on to this and is looking for the fix, here is what worked:
+
+pip uninstall jupyter-book
+conda create -n workenv python=3.7
+conda activate workenv
+pip install jupyter-book
+Description of what the steps above:
+
+uninstall jupyter-book (for some reason it has a dash on windows but no dash on macOS/linux!)
+create a new conda environment with python 3.7 (thanks @phaustin!)
+activate the env
+reinstall jupyter-book
+I am not 100% sure uninstalling and reinstalling jupyter-book is necessary, but after it worked, I wasn't going to touch it again!
